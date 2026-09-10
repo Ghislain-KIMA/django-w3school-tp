@@ -28,6 +28,7 @@ db.sqlite3
 staticfiles/
 media/
 
+
 # Cache et fichiers temporaires
 *.tmp
 *.swp
