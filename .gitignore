@@ -22,7 +22,7 @@ db.sqlite3
 
 # Migrations (optionnel, si vous ne voulez pas les versionner)
 */migrations/__pycache__/
-*/migrations/*.py
+!*/migrations/__init__.py
 
 # Fichiers statiques et médias
 staticfiles/
