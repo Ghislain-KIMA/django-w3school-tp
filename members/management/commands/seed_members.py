@@ -21,5 +21,5 @@ class Command(BaseCommand):
             Member(**m, slug=slugify(f"{m['firstname']}-{m['lastname']}")) for m in members_list
         ]
 
-        Member.objects.bulk_create(objs)
+        Member.objects.bulk_create(objs, ignore_conflicts=True)
         self.stdout.write(self.style.SUCCESS("Membres ajoutés avec succès !"))
